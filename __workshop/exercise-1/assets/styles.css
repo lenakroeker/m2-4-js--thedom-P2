@@ -1,3 +1,7 @@
+body {
+  background: rgb(147, 242, 255);
+}
+
 main {
   padding: 0 36px;
 }
@@ -26,7 +30,7 @@ main {
   align-items: center;
   position: absolute;
   left: -24px;
-  height: 80px;
+  height: 70px;
 }
 
 .length {
@@ -48,7 +52,8 @@ main {
 }
 .frog {
   border-radius: 50%;
-  color: #fff;
+  color: rgb(255, 255, 255);
+  background-image: url("frogx50.png");
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -59,6 +64,7 @@ main {
   left: 0;
   transition: all ease-out 300ms;
   z-index: 1;
+  transform: rotate(90deg);
 }
 .frog-name {
   color: rgba(255, 255, 255, 0.4);
@@ -69,3 +75,59 @@ main {
   text-transform: uppercase;
   z-index: 0;
 }
+
+#rankArea {
+  padding-top: 25px;
+  padding-left: calc(50vw - 170px);
+  display: grid;
+  text-align: left;
+  margin: auto;
+  line-height:2em;
+  color: rgb(88, 83, 83);
+  font-size: 12px;
+  font-family: 'Press Start 2P', cursive;
+  grid-template-columns: 120px 125px;
+  grid-template-areas: 
+  "rank1 rank2";
+}
+
+#rank1 {
+  grid-area: rank1;
+  background: pink;
+  padding-left: 20px;
+  text-align: right;
+  border: 8px solid yellow;
+  border-radius: 10px 0 0 10px;
+  border-right: none;
+}
+#rank2 {
+  grid-area: rank2;
+  background: pink;
+  padding-top: 24px;
+  padding-left: 10px;
+  border: 8px solid yellow;
+  border-radius: 0 10px 10px 0;
+  border-left: none;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Luckiest Guy', cursive;
+  color: rgb(0, 73, 33);
+  font-size: 50px;
+  text-shadow: 2px 2px 2px rgb(123, 255, 0);
+  margin:5px;
+}
+
+#gold {
+  color: goldenrod;
+}
+
+#silver {
+  color: rgb(123, 128, 150);
+}
+
+#bronze {
+  color: rgb(170, 96, 0);
+}
+

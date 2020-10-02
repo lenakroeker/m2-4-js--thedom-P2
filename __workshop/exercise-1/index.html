@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Exercise 2</title>
-  </head>
-  <body>
-    <main>
-      <h1>The Great Frog Race</h1>
-      <ol id="track" class="track"></ol>
-    </main>
-    <script src="app.js"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./assets/styles.css" />
+  <title>Exercise 2</title>
+</head>
+
+<body>
+  <main>
+    <h1>The Great Frog Race</h1>
+    <ol id="track" class="track"></ol>
+    <div id="rankArea">
+      <div id="rank1">
+        <p id="rankNum">Ranking:</br><span id="gold">1st</span></br><span id="silver">2nd</span></br><span
+            id="bronze">3rd</span></p>
+      </div>
+      <div id="rank2">
+        <p id="rankNames"></p>
+      </div>
+    </div>
+  </main>
+  <script src="./assets/frogStable.js"></script>
+  <script src="app.js"></script>
+</body>
+
 </html>

@@ -12,6 +12,13 @@
 
 const count = (arr, key) => {
   // Insert missing solution please
+  let total = 0;
+  arr.forEach(function(elem){
+    if (key in elem && typeof elem[key] === "number"){
+      total += elem[key];
+    }
+  });
+  return total;
 };
 
 // Part 2 - Test

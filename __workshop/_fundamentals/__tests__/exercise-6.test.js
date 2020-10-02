@@ -7,4 +7,16 @@ test("Exercise 6", () => {
   // add more tests here...
 });
 
+test("Exercise 6", () => {
+  expect(isPalindrome(343)).toBe(undefined);
+});
+
+test("Exercise 6", () => {
+  expect(isPalindrome("kitty")).toBe(false);
+});
+
+test("Exercise 6", () => {
+  expect(isPalindrome("lol")).toBe(true);
+});
+
 // More info on jest expect: https://jestjs.io/docs/en/expect

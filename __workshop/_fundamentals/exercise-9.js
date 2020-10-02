@@ -10,7 +10,22 @@
 
 const wrapAfter40Chars = (paragraph) => {
   // Your code here
-};
+  let parray = paragraph.split("");
+  let donestr = '';
+  parray.forEach((character, index) => {
+    if (index !== 0 && character === " " && donestr.charAt(donestr.length - 1) === "\n") {
+      return
+    }
+    donestr += character;
+    if ((index + 1) % 40 === 0) {
+      donestr += "\n";
+    }
+  })
+
+
+  console.log(donestr)
+  return donestr;
+}
 
 // Part 2 - Test
 // --------------

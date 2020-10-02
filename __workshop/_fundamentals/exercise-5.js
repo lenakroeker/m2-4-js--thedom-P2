@@ -9,6 +9,17 @@
 
 const addNumbers = (...nums) => {
   // Insert missing solution please
+  let total = 0;
+  nums.forEach(function (el) {
+    if(typeof el === "number"){
+      total += (el * el);
+    }
+  })
+  if(total === 0){
+    return "undefined";
+  }else {
+    return total;
+  }
 };
 
 // Part 2 - Test

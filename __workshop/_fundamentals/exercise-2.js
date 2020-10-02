@@ -10,6 +10,12 @@
 
 const redacted = (arr) => {
   // Insert missing solution please
+  for(let i = 0; i < arr.length; i++){
+    if(typeof arr[i] === "string"){
+      arr.splice(i, 1, "redacted");
+    }
+  }
+  return arr;
 };
 
 // Part 2 - Test

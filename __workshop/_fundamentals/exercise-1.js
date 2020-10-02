@@ -7,6 +7,9 @@
 
 const convertToString = (arr) => {
   // Insert missing solution please
+ let newarr = arr.join(" ");
+ let newerarr = newarr.split(" ");
+  return newerarr;
 };
 
 // Part 2 - Test

@@ -7,4 +7,17 @@ test("Exercise 5", () => {
   // add more tests here...
 });
 
+test("Exercise 5", () => {
+  expect(addNumbers(1, 10, 10, 10, 5)).toBe(326);
+});
+
+test("Exercise 5", () => {
+  expect(addNumbers("hello", "meow", "r", "4", "hi")).toBe("undefined");
+  // add more tests here...
+});
+
+test("Exercise 5", () => {
+  expect(addNumbers(10, 10, 1, "4", 10)).toBe(301);
+  // add more tests here...
+});
 // More info on jest expect: https://jestjs.io/docs/en/expect

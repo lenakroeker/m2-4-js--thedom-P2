@@ -15,6 +15,12 @@
 
 const addValues = (arr, obj) => {
   // Insert missing solution please
+  let newarr = [];
+  for(let i = 0; i < arr.length; i++){
+    let mergedObj = {...arr[i], ...obj};
+    newarr.push(mergedObj);
+  }
+  return newarr;
 };
 
 // Part 2 - Test

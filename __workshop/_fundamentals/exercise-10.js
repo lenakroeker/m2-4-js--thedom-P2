@@ -28,6 +28,21 @@
 
 const uniqueElements = (arr1, arr2) => {
   // Your code here
+  let badArr = [];
+  for(let i = 0; i < arr1.length; i++){
+    console.log("before: ",arr1[i])
+    console.log(arr1);
+    if(arr2.includes(arr1[i])){
+      console.log("after: ", arr1[i])
+      let baddy = arr1[i];
+      badArr.push(baddy);
+      delete arr1[i];
+    }
+  }
+  console.log(badArr);
+  let arr3 = arr1.concat(arr2);
+  let arr4 = arr3.filter(elem => !badArr.includes(elem));
+  return arr4;
 };
 
 // Part 2 - Test
